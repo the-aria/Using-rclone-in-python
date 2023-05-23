@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains two Python scripts that enable secure data transfer and access using rclone, a command-line program for cloud storage management. The first script, **EncryptAndUpload.py**, copies data from the *origin_root* directory and transfers it to an encrypted remote using the rclone copy command. During the process, the data is encrypted to ensure its security. The second script, **MountEncryptedData.py**, utilizes the rclone mount command to create a virtual drive, making the encrypted data accessible to the user.
+This repository contains two Python scripts that enable secure data transfer and access using rclone, a command-line program for cloud storage management. The first script, **EncryptAndUpload.py**, copies data from the *origin_root* directory and transfers it to an encrypted remote using the rclone copy command. Assuming the rclone remote is set up as a "crypt" type remote, the command "rclone copy" encrypts the data as well. The second script, **MountEncryptedData.py**, utilizes the rclone mount command to create a virtual drive, making the encrypted data accessible to the user.
 
 ## Prerequisites
 
